@@ -77,11 +77,9 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 200vh;
   font-size: 16px;
   line-height: 24px;
   color: #030A1B;
-  background-color: E5E5E5;
 }
 
 .container {
@@ -263,10 +261,6 @@ body {
   left: 5px;
   opacity: 1;
 }
-.tabs__arrow.fit {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
 .tabs__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,6 +275,15 @@ body {
 }
 .tabs__button:hover {
   opacity: 0.9;
+}
+.tabs__line {
+  display: block;
+  position: relative;
+  right: 40px;
+  height: 34px;
+  width: 0.5px;
+  background-color: #030A1B;
+  opacity: 0.1;
 }
 
 .fstdiv {
@@ -363,13 +366,14 @@ body {
           box-shadow: 0px 8px 70px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
 }
-.popular__img {
+
+.block-popular__img {
   height: 323px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.popular__content {
+.block-popular__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,11 +381,27 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
   padding: 30px;
   background-color: white;
   border-radius: 10px;
 }
-.popular__top {
+.block-popular__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.block-popular__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,16 +412,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.popular__name {
+.block-popular__title {
   font-size: 22px;
   font-weight: 600;
   line-height: 33px;
 }
-.popular__text {
+.block-popular__text {
   margin: 10px 0px 20px;
   opacity: 0.7;
 }
-.popular__info {
+.block-popular__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,7 +430,7 @@ body {
           align-items: center;
   gap: 20px;
 }
-.popular__detalis {
+.block-popular__bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,21 +445,21 @@ body {
   gap: 10px;
   margin-top: 20px;
 }
-.popular__price {
+.block-popular__price {
   font-size: 22px;
   font-weight: 600;
   line-height: 33px;
   color: #FE753F;
 }
-.popular__button {
+.block-popular__button {
   padding: 10px 20px;
   font-weight: 500;
   border-radius: 5px;
 }
-.popular__button:hover {
+.block-popular__button:hover {
   opacity: 0.9;
 }
-.popular__fav {
+.block-popular__fav {
   fill: #BBBBBB;
   cursor: pointer;
   height: 14px;
@@ -906,6 +926,10 @@ body {
   .header__logo {
     max-width: 80%;
   }
+  .header__item:last-child {
+    position: absolute;
+    bottom: 40px;
+  }
 
   .head {
     -webkit-box-orient: vertical;
@@ -949,7 +973,13 @@ body {
             align-items: flex-start;
     gap: 30px;
   }
+  .tabs__line {
+    display: none;
+  }
 
+  .partners {
+    padding-bottom: 50px;
+  }
   .partners__title {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -995,7 +1025,8 @@ body {
   }
 
   .popular {
-    padding-top: 70px;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
   .popular__list {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1008,7 +1039,11 @@ body {
     font-size: 14px;
   }
 
+  .featured__head {
+    padding-top: 40px;
+  }
   .featured__list {
+    padding-top: 40px;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -1045,6 +1080,7 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     gap: 20px;
+    padding-bottom: 20px;
   }
   .footer__linked {
     -webkit-box-flex: 1;

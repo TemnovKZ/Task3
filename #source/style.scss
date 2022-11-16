@@ -19,11 +19,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 body {
     font-family: 'Poppins', sans-serif;
-    height: 200vh;
     font-size: 16px;
     line-height: 24px;
     color: #030A1B;
-    background-color: E5E5E5;
 }
 
 .container {
@@ -196,10 +194,6 @@ body {
         opacity: 1;
     }
 
-    &__arrow.fit {
-        transform: rotate(180deg);
-    }
-
     &__button {
         display: flex;
         gap: 10px;
@@ -211,6 +205,16 @@ body {
 
     &__button:hover {
         opacity: 0.9;
+    }
+
+    &__line {
+        display: block;
+        position: relative;
+        right: 40px;
+        height: 34px;
+        width: 0.5px;
+        background-color: #030A1B;
+        opacity: 0.1;
     }
 }
 
@@ -290,6 +294,11 @@ body {
         border-radius: 10px;
     }
 
+    
+}
+
+.block-popular {
+
     &__img {
         height: 323px;
         width: 100%;
@@ -299,6 +308,8 @@ body {
     &__content {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
         padding: 30px;
         background-color: white;
         border-radius: 10px;
@@ -306,11 +317,17 @@ body {
 
     &__top {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__name {
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    &__name {
+    &__title {
         font-size: 22px;
         font-weight: 600;
         line-height: 33px;
@@ -327,7 +344,7 @@ body {
         gap: 20px;
     }
 
-    &__detalis {
+    &__bot {
         display: flex;
         justify-content: space-between;
         align-items: center;

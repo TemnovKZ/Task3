@@ -30,7 +30,7 @@ var swiper = new Swiper(".review__slider", {
 	},
   });
 
-let icon = document.querySelectorAll('.popular__fav');
+let icon = document.querySelectorAll('.block-popular__fav');
 icon.forEach(icon => {
 	icon.addEventListener('click', 
 		function (e) {
