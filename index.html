@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/fstdropdown.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Task3</title>
+</head>
+<body>
+    <header class="header container">
+        <img class="header__logo" alt="logo" src="img/logo.svg">
+        <ul class="header__list">
+            <li class="header__item"><a href="#" class="header__link">Home</a></li>
+            <li class="header__item"><a href="#" class="header__link">Properties</a></li>
+            <li class="header__item"><a href="#" class="header__link">About us</a></li>
+            <li class="header__item"><a href="#" class="header__link">Blog</a></li>
+            <li class="header__item"><a href="#" class="header__link">Contact us</a></li>
+        </ul>
+        <button class="header__burger">
+            <span class="header__line"></span>
+        </button>
+    </header>
+    <main class="main">
+        <section class="head container">
+            <div class="head__content">
+                <h1 class="head__title">Find the perfect place to stay with your family</h1>
+                <p class="head__subtitle">Buying a home is a life-changing experience, so shouldn’t your real estate agent be a life changer.</p>
+                <div class="tabs">
+                    <nav class="tabs__list">
+                        <button class="tabs__item active" data-tab="#buy" autofocus>Buy</button>
+                        <button class="tabs__item" data-tab="#rent">Rent</button>
+                        <button class="tabs__item" data-tab="#sell">Sell</button>
+                    </nav>
+                    <div class="tabs__content active" id="buy">
+                        <div class="tabs__select">
+                            <p class="tabs__title">Location <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p> 
+                            <select name="buy" class="fstdropdown-select">
+                                <option value="value1">Dhaka</option>
+                                <option value="value2">Abu Dhabi</option>
+                                <option value="value3">Thailand</option> 
+                                <option value="value4">Pattaya</option>
+                                <option value="value5">Moscow</option>
+                            </select>
+                        </div>
+                        <div class="tabs__select"> <p class="tabs__title">Property type <img class="tabs__arrow fit" alt="$" src="img/icon/arrow-down.svg"></p>
+                            <select name="Property-type" class="fstdropdown-select" data-searchdisable="true">
+                                <option value="value1">Duplex</option>
+                                <option value="value2">Flat</option>
+                                <option value="value3">House</option>
+                                <option value="value4">Villa</option>
+                                <option value="value5">Plot</option>
+                            </select>
+                        </div>
+                        <div class="tabs__select"> <p class="tabs__title">Price <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p>
+                            <select name="sell" class="fstdropdown-select" data-searchdisable="true">
+                                <option value="value1">2000-4000$</option>
+                                <option value="value2">4000-6000$</option>
+                                <option value="value3">6000-8000$</option>
+                                <option value="value4">8000-10000$</option>
+                            </select>
+                        </div>
+                        <button class="tabs__button button"><img  alt="search" src="img/icon/lupa.png">Search</button>
+                    </div>
+                    <div class="tabs__content" id="rent">
+                        <div class="tabs__select">
+                            <p class="tabs__title">Location <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p> 
+                            <select name="buy" class="fstdropdown-select">
+                                <option value="value1">Dhaka</option>
+                                <option value="value2">Abu Dhabi</option>
+                                <option value="value3">Thailand</option> 
+                                <option value="value4">Pattaya</option>
+                                <option value="value5">Moscow</option>
+                            </select>
+                        </div>
+                        <div class="tabs__select"> <p class="tabs__title">Property type <img class="tabs__arrow fit" alt="$" src="img/icon/arrow-down.svg"></p>
+                            <select name="Property-type" class="fstdropdown-select" data-searchdisable="true">
+                                <option value="value1">Duplex</option>
+                                <option value="value2">Flat</option>
+                                <option value="value3">House</option>
+                                <option value="value4">Villa</option>
+                                <option value="value5">Plot</option>
+                            </select>
+                        </div>
+                        <div class="tabs__select"> <p class="tabs__title">Price <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p>
+                            <select name="sell" class="fstdropdown-select" data-searchdisable="true">
+                                <option value="value1">2000-4000$</option>
+                                <option value="value2">4000-6000$</option>
+                                <option value="value3">6000-8000$</option>
+                                <option value="value4">8000-10000$</option>
+                            </select>
+                        </div>
+                        <button class="tabs__button button"><img  alt="search" src="img/icon/lupa.png">Search</button>
+                    </div>
+                    <div class="tabs__content" id="sell">
+                        <div class="tabs__select">
+                            <p class="tabs__title">Location <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p> 
+                            <select name="buy" class="fstdropdown-select">
+                                <option value="value1">Dhaka</option>
+                                <option value="value2">Abu Dhabi</option>
+                                <option value="value3">Thailand</option> 
+                                <option value="value4">Pattaya</option>
+                                <option value="value5">Moscow</option>
+                            </select>
+                        </div>
+                        <div class="tabs__select"> <p class="tabs__title">Property type <img class="tabs__arrow fit" alt="$" src="img/icon/arrow-down.svg"></p>
+                            <select name="Property-type" class="fstdropdown-select" data-searchdisable="true">
+                                <option value="value1">Duplex</option>
+                                <option value="value2">Flat</option>
+                                <option value="value3">House</option>
+                                <option value="value4">Villa</option>
+                                <option value="value5">Plot</option>
+                            </select>
+                        </div>
+                        <div class="tabs__select"> <p class="tabs__title">Price <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p>
+                            <select name="sell" class="fstdropdown-select" data-searchdisable="true">
+                                <option value="value1">2000-4000$</option>
+                                <option value="value2">4000-6000$</option>
+                                <option value="value3">6000-8000$</option>
+                                <option value="value4">8000-10000$</option>
+                            </select>
+                        </div>
+                        <button class="tabs__button button"><img  alt="search" src="img/icon/lupa.png">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="head__image"><img class="head__img" alt="build" src="img/head-image.jpg"></div>
+        </section>
+        <section class="partners container">
+            <p class="partners__title title">Our Partners</p>
+            <ul class="partners__list">
+                <li><img class="partners__img" alt="biotech" src="img/par1.png"></li>
+                <li><img class="partners__img" alt="express" src="img/par2.png"></li>
+                <li><img class="partners__img" alt="smilehome" src="img/par3.png"></li>
+                <li><img class="partners__img" alt="connect" src="img/par4.png"></li>
+                <li><img class="partners__img" alt="homebuild" src="img/par5.png"></li>
+            </ul>
+        </section>
+        <section class="popular container">
+            <div class="popular__title">
+                <p class="title">Popular Properties</p>
+                <a class="popular__link" href="#">VIEW ALL</a>
+            </div>
+            <ul class="popular__list">
+                <li class="popular__block">
+                    <div class="popular__image"><img class="popular__img" alt="house" src="img/house1.jpg"></div>
+                    <div class="popular__content">
+                        <div class="popular__top">
+                            <p class="popular__name">Capital hill residence</p>
+                            <div class="popular__fav">
+                                <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="popular__text"><i class="sprite sprite-location"></i>East London</p>
+                        <ul class="popular__info">
+                            <p><i class="sprite sprite-bed"></i>6</p>
+                            <p><i class="sprite sprite-kitch"></i>2</p>
+                            <p><i class="sprite sprite-bath"></i>3</p>
+                        </ul>
+                        <div class="popular__detalis">
+                            <span class="popular__price">$5527.00</span>
+                            <button class="popular__button button">View Details</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popular__block">
+                    <div class="popular__image"><img class="popular__img" alt="house" src="img/house2.jpg"></div>
+                    <div class="popular__content">
+                        <div class="popular__top">
+                            <p class="popular__name">Picket Fence Realty</p>
+                            <div class="popular__fav">
+                                <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="popular__text"><i class="sprite sprite-location"></i>East London</p>
+                        <ul class="popular__info">
+                            <p><i class="sprite sprite-bed"></i>6</p>
+                            <p><i class="sprite sprite-kitch"></i>2</p>
+                            <p><i class="sprite sprite-bath"></i>3</p>
+                        </ul>
+                        <div class="popular__detalis">
+                            <span class="popular__price">$6727.00</span>
+                            <button class="popular__button button">View Details</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popular__block">
+                    <div class="popular__image"><img class="popular__img" alt="house" src="img/house3.jpg"></div>
+                    <div class="popular__content">
+                        <div class="popular__top">
+                            <p class="popular__name">Banyon Tree Realty</p>
+                            <div class="popular__fav">
+                                <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="popular__text"><i class="sprite sprite-location"></i>East London</p>
+                        <ul class="popular__info">
+                            <p><i class="sprite sprite-bed"></i>6</p>
+                            <p><i class="sprite sprite-kitch"></i>2</p>
+                            <p><i class="sprite sprite-bath"></i>3</p>
+                        </ul>
+                        <div class="popular__detalis">
+                            <span class="popular__price">$4327.00</span>
+                            <button class="popular__button button">View Details</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popular__block">
+                    <div class="popular__image"><img class="popular__img" alt="house" src="img/house4.jpg"></div>
+                    <div class="popular__content">
+                        <div class="popular__top">
+                            <p class="popular__name">Corsair Real Estate</p>
+                            <div class="popular__fav">
+                                <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="popular__text"><i class="sprite sprite-location"></i>East London</p>
+                        <ul class="popular__info">
+                            <p><i class="sprite sprite-bed"></i>6</p>
+                            <p><i class="sprite sprite-kitch"></i>2</p>
+                            <p><i class="sprite sprite-bath"></i>3</p>
+                        </ul>
+                        <div class="popular__detalis">
+                            <span class="popular__price">$4427.00</span>
+                            <button class="popular__button button">View Details</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popular__block">
+                    <div class="popular__image"><img class="popular__img" alt="house" src="img/house5.jpg"></div>
+                    <div class="popular__content">
+                        <div class="popular__top">
+                            <p class="popular__name">Sequoia Real Estate</p>
+                            <div class="popular__fav">
+                                <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="popular__text"><i class="sprite sprite-location"></i>East London</p>
+                        <ul class="popular__info">
+                            <p><i class="sprite sprite-bed"></i>6</p>
+                            <p><i class="sprite sprite-kitch"></i>2</p>
+                            <p><i class="sprite sprite-bath"></i>3</p>
+                        </ul>
+                        <div class="popular__detalis">
+                            <span class="popular__price">$4527.00</span>
+                            <button class="popular__button button">View Details</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popular__block">
+                    <div class="popular__image"><img class="popular__img" alt="house" src="img/house6.jpg"></div>
+                    <div class="popular__content">
+                        <div class="popular__top">
+                            <p class="popular__name">Strive Partners Realty</p>
+                            <div class="popular__fav">
+                                <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="popular__text"><i class="sprite sprite-location"></i>East London</p>
+                        <ul class="popular__info">
+                            <p><i class="sprite sprite-bed"></i>6</p>
+                            <p><i class="sprite sprite-kitch"></i>2</p>
+                            <p><i class="sprite sprite-bath"></i>3</p>
+                        </ul>
+                        <div class="popular__detalis">
+                            <span class="popular__price">$5527.00</span>
+                            <button class="popular__button button">View Details</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="featured">
+            <div class="featured__container container">
+                <div class="featured__head">
+                    <p class="featured__title title">Property Featured</p>
+                    <p class="featured__subtitle">Real estate is a crowded field. But with the number of buyers purchasing homes through real estate agents and brokers growing there’s plenty of </p>
+                </div>
+                <div class="featured__list">
+                    <div class="featured__block">
+                        <div class="featured__icon">
+                            <img class="featured__icn" alt="icon" src="img/icon/shield.png">
+                        </div>
+                        <p class="featured__name">100% Security</p>
+                        <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
+                    </div>
+                    <div class="featured__block">
+                        <div class="featured__icon">
+                            <img class="featured__icn" alt="icon" src="img/icon/split.png">
+                        </div>
+                        <p class="featured__name">Free air conditioner</p>
+                        <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
+                    </div>
+                    <div class="featured__block">
+                        <div class="featured__icon">
+                            <img class="featured__icn" alt="icon" src="img/icon/grow.png">
+                        </div>
+                        <p class="featured__name">Flower garden</p>
+                        <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
+                    </div>
+                    <img class="featured__image" alt="house" src="img/feat-house.jpg">
+                    <div class="featured__block">
+                        <div class="featured__icon">
+                            <img class="featured__icn" alt="icon" src="img/icon/car.png">
+                        </div>
+                        <p class="featured__name">Parkers & movers</p>
+                        <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
+                    </div>
+                    <div class="featured__block">
+                        <div class="featured__icon">
+                            <img class="featured__icn" alt="icon" src="img/icon/divan.png">
+                        </div>
+                        <p class="featured__name">Rental furniture</p>
+                        <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
+                    </div>
+                    <div class="featured__block">
+                        <div class="featured__icon">
+                            <img class="featured__icn" alt="icon" src="img/icon/swim.png">
+                        </div>
+                        <p class="featured__name">Swimming pool</p>
+                        <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review container">
+            <div class="review__head">
+                <a class="review__link" href="#">REVIEWS</a>
+                <p class="review__title title">Our valuable customer says</p>
+            </div>
+            <div class="review__slider swiper">
+                <div class="review__wrapper swiper-wrapper">
+                    <div class="review__item swiper-slide">
+                        <div class="review__top">
+                            <img class="review__img" alt="man" src="img/review2.png">
+                            <div class="review__text">
+                                <p class="review__name">Justin Lee</p>
+                                <p class="review__jobs">Products Designer at Ito</p>
+                            </div>
+                            <img class="review__bg" alt="quote" src="img/quote.png">
+                        </div>
+                        <div class="review__bot">
+                            A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought Bringing It All Together.
+                        </div>
+                    </div>
+                    <div class="review__item swiper-slide">
+                        <div class="review__top">
+                            <img class="review__img" alt="man" src="img/review.png">
+                            <div class="review__text">
+                                <p class="review__name">Angel Cathe</p>
+                                <p class="review__jobs">Products Designer at Ito</p>
+                            </div>
+                            <img class="review__bg" alt="quote" src="img/quote.png">
+                        </div>
+                        <div class="review__bot">
+                            A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought Bringing It All Together.
+                        </div>
+                    </div>
+                    <div class="review__item swiper-slide">
+                        <div class="review__top">
+                            <img class="review__img" alt="man" src="img/Bruce.jpg">
+                            <div class="review__text">
+                                <p class="review__name">Bruce Lee</p>
+                                <p class="review__jobs">Products Designer at Ito</p>
+                            </div>
+                            <img class="review__bg" alt="quote" src="img/quote.png">
+                        </div>
+                        <div class="review__bot">
+                            A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought Bringing It All Together.
+                        </div>
+                    </div>
+                    <div class="review__item swiper-slide">
+                        <div class="review__top">
+                            <img class="review__img" alt="man" src="img/trump.jpg">
+                            <div class="review__text">
+                                <p class="review__name">Donald Trump</p>
+                                <p class="review__jobs">Products Designer at Ito</p>
+                            </div>
+                            <img class="review__bg" alt="quote" src="img/quote.png">
+                        </div>
+                        <div class="review__bot">
+                            A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought Bringing It All Together.
+                        </div>
+                    </div>
+                    <div class="review__item swiper-slide">
+                        <div class="review__top">
+                            <img class="review__img" alt="man" src="img/conor.jpeg">
+                            <div class="review__text">
+                                <p class="review__name">Conor Mcgregor</p>
+                                <p class="review__jobs">Products Designer at Ito</p>
+                            </div>
+                            <img class="review__bg" alt="quote" src="img/quote.png">
+                        </div>
+                        <div class="review__bot">
+                            A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought Bringing It All Together.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="contact container">
+            <div class="contact__bg">
+                <div class="contact__contant">
+                    <p class="contact__title">Get listed your home as  a owner</p>
+                    <p class="contact__subtitle">Here is a list of the greatest real estate company slogans of all-time. These catchy slogans are followed by the Greatest Real Estate.</p>
+                    <form action="#" method="get" class="contact__enter">
+                        <input class="contact__email" type="email" id="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required="required">
+                        <button class="contact__button" type="submit">Subscribe</button> 
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="footer__linked">
+            <img class="footer__logo" alt="logo" src="img/logo2.png">
+            <p class="footer__text">Contrary to popular  is not simply random text. It has</p>
+            <div class="footer__social">
+                <a href="#"><img class="footer__img" alt="facebook" src="img/icon/facebook.png"></a>
+                <a href="#"><img class="footer__img" alt="instagram" src="img/icon/instagram.png"></a>
+                <a href="#"><img class="footer__img" alt="twitter" src="img/icon/twitter.png"></a>
+                <a href="#"><img class="footer__img" alt="youtube" src="img/icon/youtube.png"></a>
+                <a href="#"><img class="footer__img" alt="linkedin" src="img/icon/linked.png"></a>
+            </div>
+        </div>
+        <ul class="footer__list">
+            <li class="footer__title">About</li>
+            <li class="footer__subtitile"><a class="footer__link" href="$">Company</a></li>
+            <li class="footer__subtitile"><a class="footer__link" href="$">Team</a></li>
+            <li class="footer__subtitile"><a class="footer__link" href="$">Career</a></li>
+            <li class="footer__subtitile"><a class="footer__link" href="$">Blogs</a></li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__title">Products</li>
+            <li class="footer__subtitile"><a class="footer__link" href="$">E-books</a></li>
+            <li class="footer__subtitile"><a class="footer__link" href="$">Preasantation</a></li>
+            <li class="footer__subtitile"><a class="footer__link" href="$">Management</a></li>
+            <li class="footer__subtitile"><a class="footer__link" href="$">Dashboard</a></li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__title">Address</li>
+            <li class="footer__subtitile footer__address"><a class="footer__link" href="$">Country Delevery</a></li>
+            <li class="footer__subtitile footer__address"><a class="footer__link" href="$">Counter Beach Post</a></li>
+            <li class="footer__subtitile"><a class="footer__link" href="$">www.itobd.com</a></li>
+            <li class="footer__subtitile footer__address"><a class="footer__link" href="tel:+880176565655">+880176565655</a></li>
+        </ul>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fstdropdown.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
