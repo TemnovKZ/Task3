@@ -1009,7 +1009,7 @@ body {
     padding: 10px 0px;
   }
   .popular__list {
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   }
 
   .featured__list {
@@ -1051,7 +1051,7 @@ body {
     padding-bottom: 40px;
   }
   .popular__list {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .popular__name {
     font-size: 20px;
