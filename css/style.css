@@ -259,7 +259,7 @@ body {
 .tabs__arrow {
   position: relative;
   top: 8px;
-  left: 5px;
+  left: 10px;
   opacity: 1;
 }
 .tabs__button {
