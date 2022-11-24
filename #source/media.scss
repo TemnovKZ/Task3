@@ -138,6 +138,10 @@
         &__title {
             padding: 10px 0px;
         }
+
+        &__list {
+            grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
+        }
     }
 
     .featured {
@@ -157,6 +161,9 @@
         &__bg {
             display: none;
         }
+    }
+    .title-icon {
+        background: none;
     }
 }
 
@@ -181,7 +188,7 @@
         padding-top: 20px;
         padding-bottom: 40px;
         &__list {
-            grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+            grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
         }
         &__name {
             font-size: 20px;
@@ -228,6 +235,11 @@
             margin-top: 40px;
         }
 
+        &__title {
+            font-size: 33px;
+            line-height: 44px;
+        }
+
         &__email {
             padding: 18px 15px;
             font-size: 14px;
@@ -269,6 +281,11 @@
     .title {
         font-size: 26px;
         line-height: 30px;
+    }
+
+    .header__item:last-child {
+        position: relative;
+        bottom: 0;
     }
 
     .header__logo {

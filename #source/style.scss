@@ -13,7 +13,7 @@ a:hover{text-decoration:none;}
 ul li{list-style:none;}
 img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
-.lock {overflow: hidden}
+.lock {overflow: hidden;}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -179,11 +179,12 @@ body {
         }
     }
 
-    &__select {
+    &__block {
         width: 163px;
     }
 
     &__title {
+        display: inline-block;
         opacity: 0.7;
     }
 
@@ -218,22 +219,22 @@ body {
     }
 }
 
-.fstdiv {
-    left: 0;
+.choices[data-type*=select-one]::after {
+    display: none;
 }
-
-.fstdropdown {
-    border: 0px solid white;
-    width: 100%;
-    position: absolute;
-}
-
-.fstdropdown> .fstselected {
-    padding: 6px 24px 6px 0px;
-    font-size: 22px; 
+.choices__inner {
+    border: 0px;
+    font-size: 22px;
     font-weight: 500;
-    color: #030A1B;
-    box-shadow: none;
+    background-color: white;
+    padding: 10px 0px;
+
+}
+.choices__list--single {
+    padding: 0;
+}
+.choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+    padding-right: 0px;
 }
 
 /*---------------------PARTNERS--------------------*/
@@ -251,6 +252,16 @@ body {
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 20px
+    }
+
+    &__item {
+        display: inline-block;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+
+    &__item:hover {
+        transform: rotate(360deg);
     }
 
     &__img {
@@ -293,8 +304,6 @@ body {
         box-shadow: 0px 8px 70px rgba(0, 0, 0, 0.07);
         border-radius: 10px;
     }
-
-    
 }
 
 .block-popular {
@@ -315,12 +324,6 @@ body {
         border-radius: 10px;
     }
 
-    &__top {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
     &__name {
         display: flex;
         justify-content: space-between;
@@ -334,7 +337,7 @@ body {
     }
 
     &__text {
-        margin: 10px 0px 20px;
+        margin: 10px 0px;
         opacity: 0.7;
     }
 
@@ -344,7 +347,7 @@ body {
         gap: 20px;
     }
 
-    &__bot {
+    &__bot { 
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -380,8 +383,6 @@ body {
 .red {
     fill: #E61E14;
 }
-
-
 
 /*---------------------FEATURED--------------------*/
 
@@ -432,6 +433,7 @@ body {
         align-items: center;
         width: 46px;
         height: 46px;
+        transition: 0.3s;
     }
 
     &__icon::before {
@@ -442,6 +444,10 @@ body {
         opacity: 0.1;
         background-color: #FE753F;
         border-radius: 5px;
+    }
+
+    &__icon:hover {
+        transform: scale(1.5);
     }
 
     &__name {
@@ -513,6 +519,11 @@ body {
         width: 74px;
         height: 74px;
         object-fit: cover;
+        transition: 0.5s;
+    }
+
+    &__img:hover {
+        transform: scale(1.2);
     }
 
     &__text {
@@ -698,40 +709,43 @@ body {
 /*---------------------SPRITE--------------------*/
 
 .sprite {
-    background-image: url(../img/icon/popular-icon.png);
-    background-repeat: no-repeat;
-    display: inline-block;
     position: relative;
     top: 2px;
     opacity: 0.7;
 }
 
-.sprite-location {
-    width: 11px;
-    height: 15px;
-    background-position: -4px -4px;
+.location {
     margin-right: 10px;
+    position: relative;
+    top: 4px;
 }
 
-.sprite-kitch {
-    width: 13px;
-    height: 15px;
-    background-position: -23px -4px;
+.cook {
     margin-right: 5px;
+    position: relative;
+    top: 4px;
 }
 
-.sprite-bath {
-    width: 14px;
-    height: 15px;
-    background-position: -44px -4px;
+.bath {
     margin-right: 5px;
+    position: relative;
+    top: 4px;
 }
 
-.sprite-bed {
-    width: 17px;
-    height: 13px;
-    background-position: -66px -4px;
+.bed {
     margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+.title-icon {
+    display: inline-block;
+    text-align: end;
+    width: 47px;
+    height: 62px;
+    background-image: url(/img/icon/home.png);
+    background-repeat: no-repeat;
+    background-position: 3px -3px;
 }
 
 @import "media.scss";

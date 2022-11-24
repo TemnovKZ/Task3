@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/fstdropdown.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Task3</title>
 </head>
@@ -35,9 +35,9 @@
                         <button class="tabs__item" data-tab="#sell">Sell</button>
                     </nav>
                     <div class="tabs__content active" id="buy">
-                        <div class="tabs__select">
-                            <p class="tabs__title">Location <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p> 
-                            <select name="buy" class="fstdropdown-select">
+                        <div class="tabs__block">
+                            <label class="cities"><p class="tabs__title">Location</p><img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg">
+                            <select name="location" class="tabs__select" >
                                 <option value="value1">Dhaka</option>
                                 <option value="value2">Abu Dhabi</option>
                                 <option value="value3">Thailand</option> 
@@ -46,8 +46,9 @@
                             </select>
                         </div>
                         <span class="tabs__line"></span>
-                        <div class="tabs__select"> <p class="tabs__title">Property type <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p>
-                            <select name="Property-type" class="fstdropdown-select" data-searchdisable="true">
+                        <div class="tabs__block"> 
+                            <label class="cities"><p class="tabs__title">Property type</p><img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg">
+                            <select name="property-type" class="tabs__select">
                                 <option value="value1">Duplex</option>
                                 <option value="value2">Flat</option>
                                 <option value="value3">House</option>
@@ -56,8 +57,9 @@
                             </select>
                         </div>
                         <span class="tabs__line"></span>
-                        <div class="tabs__select"> <p class="tabs__title">Price <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p>
-                            <select name="sell" class="fstdropdown-select" data-searchdisable="true">
+                        <div class="tabs__block"> 
+                            <label class="cities"><p class="tabs__title">Price</p><img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg">
+                            <select name="price" class="tabs__select">
                                 <option value="value1">2000-4000$</option>
                                 <option value="value2">4000-6000$</option>
                                 <option value="value3">6000-8000$</option>
@@ -67,9 +69,9 @@
                         <button class="tabs__button button"><img  alt="search" src="img/icon/lupa.png">Search</button>
                     </div>
                     <div class="tabs__content" id="rent">
-                        <div class="tabs__select">
-                            <p class="tabs__title">Location <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p> 
-                            <select name="buy" class="fstdropdown-select">
+                        <div class="tabs__block">
+                            <label class="cities"><p class="tabs__title">Location</p><img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg">
+                            <select name="location" class="tabs__select">
                                 <option value="value1">Dhaka</option>
                                 <option value="value2">Abu Dhabi</option>
                                 <option value="value3">Thailand</option> 
@@ -78,8 +80,9 @@
                             </select>
                         </div>
                         <span class="tabs__line"></span>
-                        <div class="tabs__select"> <p class="tabs__title">Property type <img class="tabs__arrow fit" alt="$" src="img/icon/arrow-down.svg"></p>
-                            <select name="Property-type" class="fstdropdown-select" data-searchdisable="true">
+                        <div class="tabs__block"> 
+                            <label class="cities"><p class="tabs__title">Property type</p><img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg">
+                            <select name="property-type" class="tabs__select">
                                 <option value="value1">Duplex</option>
                                 <option value="value2">Flat</option>
                                 <option value="value3">House</option>
@@ -88,8 +91,9 @@
                             </select>
                         </div>
                         <span class="tabs__line"></span>
-                        <div class="tabs__select"> <p class="tabs__title">Price <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p>
-                            <select name="sell" class="fstdropdown-select" data-searchdisable="true">
+                        <div class="tabs__block"> 
+                            <label class="cities"><p class="tabs__title">Price</p><img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg">
+                            <select name="price" class="tabs__select">
                                 <option value="value1">2000-4000$</option>
                                 <option value="value2">4000-6000$</option>
                                 <option value="value3">6000-8000$</option>
@@ -99,9 +103,9 @@
                         <button class="tabs__button button"><img  alt="search" src="img/icon/lupa.png">Search</button>
                     </div>
                     <div class="tabs__content" id="sell">
-                        <div class="tabs__select">
-                            <p class="tabs__title">Location <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p> 
-                            <select name="buy" class="fstdropdown-select">
+                        <div class="tabs__block">
+                            <label class="cities"><p class="tabs__title">Location</p><img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg">
+                            <select name="location" class="tabs__select">
                                 <option value="value1">Dhaka</option>
                                 <option value="value2">Abu Dhabi</option>
                                 <option value="value3">Thailand</option> 
@@ -110,8 +114,9 @@
                             </select>
                         </div>
                         <span class="tabs__line"></span>
-                        <div class="tabs__select"> <p class="tabs__title">Property type <img class="tabs__arrow fit" alt="$" src="img/icon/arrow-down.svg"></p>
-                            <select name="Property-type" class="fstdropdown-select" data-searchdisable="true">
+                        <div class="tabs__block"> 
+                            <label class="cities"><p class="tabs__title">Property type</p><img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg">
+                            <select name="property-type" class="tabs__select">
                                 <option value="value1">Duplex</option>
                                 <option value="value2">Flat</option>
                                 <option value="value3">House</option>
@@ -120,8 +125,9 @@
                             </select>
                         </div>
                         <span class="tabs__line"></span>
-                        <div class="tabs__select"> <p class="tabs__title">Price <img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg"></p>
-                            <select name="sell" class="fstdropdown-select" data-searchdisable="true">
+                        <div class="tabs__block">
+                            <label class="cities"><p class="tabs__title">Price</p><img class="tabs__arrow" alt="$" src="img/icon/arrow-down.svg">
+                            <select name="price" class="tabs__select">
                                 <option value="value1">2000-4000$</option>
                                 <option value="value2">4000-6000$</option>
                                 <option value="value3">6000-8000$</option>
@@ -135,23 +141,25 @@
             <div class="head__image"><img class="head__img" alt="build" src="img/head-image.jpg"></div>
         </section>
         <section class="partners container">
-            <p class="partners__title title">Our Partners</p>
+            <p class="partners__title title"><span class="title-icon">O</span>ur Partners</p>
             <ul class="partners__list">
-                <li><img class="partners__img" alt="biotech" src="img/par1.png"></li>
-                <li><img class="partners__img" alt="express" src="img/par2.png"></li>
-                <li><img class="partners__img" alt="smilehome" src="img/par3.png"></li>
-                <li><img class="partners__img" alt="connect" src="img/par4.png"></li>
-                <li><img class="partners__img" alt="homebuild" src="img/par5.png"></li>
+                <li><a class="partners__item" href="#"><img class="partners__img" alt="biotech" src="img/par1.png"></a></li>
+                <li><a class="partners__item" href="#"><img class="partners__img" alt="express" src="img/par2.png"></a></li>
+                <li><a class="partners__item" href="#"><img class="partners__img" alt="smilehome" src="img/par3.png"></a></li>
+                <li><a class="partners__item" href="#"><img class="partners__img" alt="connect" src="img/par4.png"></a></li>
+                <li><a class="partners__item" href="#"><img class="partners__img" alt="homebuild" src="img/par5.png"></a></li>
             </ul>
         </section>
         <section class="popular container">
             <div class="popular__title">
-                <p class="title">Popular Properties</p>
+                <p class="title"><span class="title-icon">P</span>opular Properties</p>
                 <a class="popular__link" href="#">VIEW ALL</a>
             </div>
             <ul class="popular__list">
                 <li class="popular__block block-popular">
-                    <div class="block-popular__image"><img class="block-popular__img" alt="house" src="img/house1.jpg"></div>
+                    <div class="block-popular__image">
+                        <img class="block-popular__img" alt="house" src="img/house1.jpg">
+                    </div>
                     <div class="block-popular__content">
                         <div class="block-popular__top">
                             <div class="block-popular__name">
@@ -162,16 +170,16 @@
                                     </svg>
                                 </div>
                             </div>
-                            <p class="block-popular__text"><i class="sprite sprite-location"></i>East London</p>
+                            <p class="block-popular__text"><img class="location" alt="loction" src="img/icon/loc.svg">East London</p>
                             <ul class="block-popular__info">
-                                <p><i class="sprite sprite-bed"></i>6</p>
-                                <p><i class="sprite sprite-kitch"></i>2</p>
-                                <p><i class="sprite sprite-bath"></i>3</p>
+                                <p><img class="bed" alt="bed" src="img/icon/bed.svg">6</p>
+                                <p><img class="cook" alt="cook" src="img/icon/cook.svg">2</p>
+                                <p><img class="bath" alt="bath" src="img/icon/bath.svg">3</p>
                             </ul>
                         </div>
                         <div class="block-popular__bot">
                             <span class="block-popular__price">$5527.00</span>
-                            <button class="block-popular__button button">View Details</button>
+                            <a class="block-popular__button button" href="#">View Details</a>
                         </div>
                     </div>
                 </li>
@@ -187,16 +195,16 @@
                                     </svg>
                                 </div>
                             </div>
-                            <p class="block-popular__text"><i class="sprite sprite-location"></i>East London</p>
+                            <p class="block-popular__text"><img class="location" alt="loction" src="img/icon/loc.svg">East London</p>
                             <ul class="block-popular__info">
-                                <p><i class="sprite sprite-bed"></i>6</p>
-                                <p><i class="sprite sprite-kitch"></i>2</p>
-                                <p><i class="sprite sprite-bath"></i>3</p>
+                                <p><img class="bed" alt="bed" src="img/icon/bed.svg">6</p>
+                                <p><img class="cook" alt="cook" src="img/icon/cook.svg">2</p>
+                                <p><img class="bath" alt="bath" src="img/icon/bath.svg">3</p>
                             </ul>
                         </div>
                         <div class="block-popular__bot">
                             <span class="block-popular__price">$6727.00</span>
-                            <button class="block-popular__button button">View Details</button>
+                            <a class="block-popular__button button" href="#">View Details</a>
                         </div>
                     </div>
                 </li>
@@ -212,16 +220,16 @@
                                     </svg>
                                 </div>
                             </div>
-                            <p class="block-popular__text"><i class="sprite sprite-location"></i>East London</p>
+                            <p class="block-popular__text"><img class="location" alt="loction" src="img/icon/loc.svg">East London</p>
                             <ul class="block-popular__info">
-                                <p><i class="sprite sprite-bed"></i>6</p>
-                                <p><i class="sprite sprite-kitch"></i>2</p>
-                                <p><i class="sprite sprite-bath"></i>3</p>
+                                <p><img class="bed" alt="bed" src="img/icon/bed.svg">6</p>
+                                <p><img class="cook" alt="cook" src="img/icon/cook.svg">2</p>
+                                <p><img class="bath" alt="bath" src="img/icon/bath.svg">3</p>
                             </ul>
                         </div>
                         <div class="block-popular__bot">
                             <span class="block-popular__price">$4327.00</span>
-                            <button class="block-popular__button button">View Details</button>
+                            <a class="block-popular__button button" href="#">View Details</a>
                         </div>
                     </div>
                 </li>
@@ -237,16 +245,16 @@
                                     </svg>
                                 </div>
                             </div>
-                            <p class="block-popular__text"><i class="sprite sprite-location"></i>East London</p>
+                            <p class="block-popular__text"><img class="location" alt="loction" src="img/icon/loc.svg">East London</p>
                             <ul class="block-popular__info">
-                                <p><i class="sprite sprite-bed"></i>6</p>
-                                <p><i class="sprite sprite-kitch"></i>2</p>
-                                <p><i class="sprite sprite-bath"></i>3</p>
+                                <p><img class="bed" alt="bed" src="img/icon/bed.svg">6</p>
+                                <p><img class="cook" alt="cook" src="img/icon/cook.svg">2</p>
+                                <p><img class="bath" alt="bath" src="img/icon/bath.svg">3</p>
                             </ul>
                         </div>
                         <div class="block-popular__bot">
                             <span class="block-popular__price">$4427.00</span>
-                            <button class="block-popular__button button">View Details</button>
+                            <a class="block-popular__button button" href="#">View Details</a>
                         </div>
                     </div>
                 </li>
@@ -262,16 +270,16 @@
                                     </svg>
                                 </div>
                             </div>
-                            <p class="block-popular__text"><i class="sprite sprite-location"></i>East London</p>
+                            <p class="block-popular__text"><img class="location" alt="loction" src="img/icon/loc.svg">East London</p>
                             <ul class="block-popular__info">
-                                <p><i class="sprite sprite-bed"></i>6</p>
-                                <p><i class="sprite sprite-kitch"></i>2</p>
-                                <p><i class="sprite sprite-bath"></i>3</p>
+                                <p><img class="bed" alt="bed" src="img/icon/bed.svg">6</p>
+                                <p><img class="cook" alt="cook" src="img/icon/cook.svg">2</p>
+                                <p><img class="bath" alt="bath" src="img/icon/bath.svg">3</p>
                             </ul>
                         </div>
                         <div class="block-popular__bot">
                             <span class="block-popular__price">$4527.00</span>
-                            <button class="block-popular__button button">View Details</button>
+                            <a class="block-popular__button button" href="#">View Details</a>
                         </div>
                     </div>
                 </li>
@@ -287,16 +295,16 @@
                                     </svg>
                                 </div>
                             </div>
-                            <p class="block-popular__text"><i class="sprite sprite-location"></i>East London</p>
+                            <p class="block-popular__text"><img class="location" alt="loction" src="img/icon/loc.svg">East London</p>
                             <ul class="block-popular__info">
-                                <p><i class="sprite sprite-bed"></i>6</p>
-                                <p><i class="sprite sprite-kitch"></i>2</p>
-                                <p><i class="sprite sprite-bath"></i>3</p>
+                                <p><img class="bed" alt="bed" src="img/icon/bed.svg">6</p>
+                                <p><img class="cook" alt="cook" src="img/icon/cook.svg">2</p>
+                                <p><img class="bath" alt="bath" src="img/icon/bath.svg">3</p>
                             </ul>
                         </div>
                         <div class="block-popular__bot">
                             <span class="block-popular__price">$5527.00</span>
-                            <button class="block-popular__button button">View Details</button>
+                            <a class="block-popular__button button" href="#">View Details</a>
                         </div>
                     </div>
                 </li>
@@ -305,27 +313,27 @@
         <section class="featured">
             <div class="featured__container container">
                 <div class="featured__head">
-                    <p class="featured__title title">Property Featured</p>
+                    <p class="featured__title title"><span class="title-icon">P</span>roperty Featured</p>
                     <p class="featured__subtitle">Real estate is a crowded field. But with the number of buyers purchasing homes through real estate agents and brokers growing there’s plenty of </p>
                 </div>
                 <div class="featured__list">
                     <div class="featured__block">
                         <div class="featured__icon">
-                            <img class="featured__icn" alt="icon" src="img/icon/shield.png">
+                            <img class="featured__icn" alt="icon" src="img/icon/shield.svg">
                         </div>
                         <p class="featured__name">100% Security</p>
                         <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
                     </div>
                     <div class="featured__block">
                         <div class="featured__icon">
-                            <img class="featured__icn" alt="icon" src="img/icon/split.png">
+                            <img class="featured__icn" alt="icon" src="img/icon/split.svg">
                         </div>
                         <p class="featured__name">Free air conditioner</p>
                         <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
                     </div>
                     <div class="featured__block">
                         <div class="featured__icon">
-                            <img class="featured__icn" alt="icon" src="img/icon/grow.png">
+                            <img class="featured__icn" alt="icon" src="img/icon/grow.svg">
                         </div>
                         <p class="featured__name">Flower garden</p>
                         <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
@@ -333,21 +341,21 @@
                     <img class="featured__image" alt="house" src="img/feat-house.jpg">
                     <div class="featured__block">
                         <div class="featured__icon">
-                            <img class="featured__icn" alt="icon" src="img/icon/car.png">
+                            <img class="featured__icn" alt="icon" src="img/icon/car.svg">
                         </div>
                         <p class="featured__name">Parkers & movers</p>
                         <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
                     </div>
                     <div class="featured__block">
                         <div class="featured__icon">
-                            <img class="featured__icn" alt="icon" src="img/icon/divan.png">
+                            <img class="featured__icn" alt="icon" src="img/icon/divan.svg">
                         </div>
                         <p class="featured__name">Rental furniture</p>
                         <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
                     </div>
                     <div class="featured__block">
                         <div class="featured__icon">
-                            <img class="featured__icn" alt="icon" src="img/icon/swim.png">
+                            <img class="featured__icn" alt="icon" src="img/icon/swim.svg">
                         </div>
                         <p class="featured__name">Swimming pool</p>
                         <p class="featured__info">For many of us, buying a home is a dre and one not easily attainable.</p>
@@ -358,7 +366,7 @@
         <section class="review container">
             <div class="review__head">
                 <a class="review__link" href="#">REVIEWS</a>
-                <p class="review__title title">Our valuable customer says</p>
+                <p class="review__title title"><span class="title-icon">O</span>ur valuable customer says</p>
             </div>
             <div class="review__slider swiper">
                 <div class="review__wrapper swiper-wrapper">
@@ -437,7 +445,7 @@
                     <p class="contact__title">Get listed your home as  a owner</p>
                     <p class="contact__subtitle">Here is a list of the greatest real estate company slogans of all-time. These catchy slogans are followed by the Greatest Real Estate.</p>
                     <form action="#" method="get" class="contact__enter">
-                        <input class="contact__email" type="email" id="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required="required">
+                        <input class="contact__email" type="email" id="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Enter email address" required="required">
                         <button class="contact__button" type="submit">Subscribe</button> 
                     </form>
                 </div>
@@ -479,7 +487,7 @@
         </ul>
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/fstdropdown.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

@@ -60,11 +60,11 @@ tabs.forEach(function(item) {
 	});
 });
 
-let arrowBlock = document.querySelectorAll(".fstdiv");
-let arrow = document.querySelector(".tabs__arrow");
+let element = document.querySelectorAll('.tabs__select');
 
-arrowBlock.forEach(arrowBlock => {
-	arrowBlock.addEventListener('click', function() {
-		arrow.classList.toggle('fit');
-	});
+element.forEach(element => {
+	let choices = new Choices(element, {
+		itemSelectText: '',
+		searchEnabled: false,
+	})
 });
